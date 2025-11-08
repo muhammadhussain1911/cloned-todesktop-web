@@ -9,6 +9,7 @@
       "Courier New", monospace;
     --color-green-600: oklch(62.7% 0.194 149.214);
     --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-lg: 1.125rem;
@@ -170,6 +171,24 @@
   }
 }
 @layer utilities {
+  .fixed {
+    position: fixed;
+  }
+  .inset-0 {
+    inset: calc(var(--spacing) * 0);
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .m-3 {
+    margin: calc(var(--spacing) * 3);
+  }
+  .mt-6 {
+    margin-top: calc(var(--spacing) * 6);
+  }
+  .block {
+    display: block;
+  }
   .flex {
     display: flex;
   }
@@ -178,6 +197,9 @@
   }
   .table {
     display: table;
+  }
+  .h-\[1px\] {
+    height: 1px;
   }
   .max-h-12 {
     max-height: calc(var(--spacing) * 12);
@@ -219,6 +241,9 @@
   .border-gray-200 {
     border-color: var(--color-gray-200);
   }
+  .bg-gray-300 {
+    background-color: var(--color-gray-300);
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -236,6 +261,9 @@
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
@@ -268,6 +296,13 @@
     &:hover {
       @media (hover: hover) {
         border-color: var(--color-primary);
+      }
+    }
+  }
+  .hover\:bg-gray-200 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-gray-200);
       }
     }
   }
