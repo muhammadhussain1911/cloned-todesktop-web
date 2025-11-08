@@ -272,6 +272,9 @@
   .w-16 {
     width: calc(var(--spacing) * 16);
   }
+  .w-62 {
+    width: calc(var(--spacing) * 62);
+  }
   .w-full {
     width: 100%;
   }
@@ -289,6 +292,10 @@
   }
   .border-collapse {
     border-collapse: collapse;
+  }
+  .-translate-x-36 {
+    --tw-translate-x: calc(var(--spacing) * -36);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-x-48 {
     --tw-translate-x: calc(var(--spacing) * -48);
