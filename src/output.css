@@ -672,6 +672,9 @@
   .p-\[1px\] {
     padding: 1px;
   }
+  .p-px {
+    padding: 1px;
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -901,6 +904,17 @@
       }
     }
   }
+  .group-hover\:bg-linear-to-br {
+    &:is(:where(.group):hover *) {
+      @media (hover: hover) {
+        --tw-gradient-position: to bottom right;
+        @supports (background-image: linear-gradient(in lab, red, red)) {
+          --tw-gradient-position: to bottom right in oklab;
+        }
+        background-image: linear-gradient(var(--tw-gradient-stops));
+      }
+    }
+  }
   .group-hover\:bg-gradient-to-br {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -1015,6 +1029,17 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-gray-200);
+      }
+    }
+  }
+  .hover\:bg-linear-to-br {
+    &:hover {
+      @media (hover: hover) {
+        --tw-gradient-position: to bottom right;
+        @supports (background-image: linear-gradient(in lab, red, red)) {
+          --tw-gradient-position: to bottom right in oklab;
+        }
+        background-image: linear-gradient(var(--tw-gradient-stops));
       }
     }
   }
