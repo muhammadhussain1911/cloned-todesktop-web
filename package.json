@@ -1,6 +1,24 @@
 {
+  "name": "todesktop-clone",
+  "version": "1.0.0",
+  "author": "Muhammad Hussain",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
     "tailwindcss": "^4.1.17"
+  },
+  "tailwind": {
+    "content": ["./index.html"],
+    "theme": {
+      "extend": {
+        "colors": {
+          "primary": "#3238f2"
+        },
+        "fontFamily": {
+          "display": ["Poppins", "sans-serif"],
+          "body": ["Inter", "sans-serif"]
+        }
+      }
+    },
+    "plugins": []
   }
 }
