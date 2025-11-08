@@ -7,6 +7,31 @@
   <title>Document</title>
 </head>
 <body>
-  
+  <!-- main-web-nav-bar start -->
+  <nav class="p-3 flex bg-white justify-between items-center">
+    <div class="flex gap-2 items-center flex-1">
+        <img class="object-cover max-w-12 max-h-12" src="asset/square_14034317.png" alt="Logo">
+        <span class="text-lg font-medium font-display">ToDesktop</span>
+    </div>
+    <div class="nav-menu hidden lg:flex gap-12">
+        <a href="#" class="font-medium hover:text-primary" >Pricing</a>
+        <a href="#" class="font-medium hover:text-primary" >Docs</a>
+        <a href="#" class="font-medium hover:text-primary" >Changelog</a>
+        <a href="#" class="font-medium hover:text-primary" >Blogs</a>
+        <a href="#" class="font-medium hover:text-primary" >Login</a>
+    </div>
+    <div class="hidden lg:flex flex-1 justify-end">
+        <button class="flex items-center border border-gray-200  px-4 py-1 rounded-lg hover:border-primary">
+        <i class="fa-regular fa-square-caret-down pr-2"></i>
+        <span> Electron Developers</span>
+        <i class="fa-solid fa-arrow-right pl-2"></i>
+        </button>
+    </div>
+
+    <button class="p-2 lg:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-bars text-green-600"></i>
+    </button>
+  </nav>
+
 </body>
 </html>
